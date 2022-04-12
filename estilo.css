@@ -1,0 +1,104 @@
+/* CSS */
+/* Aplicar estilo CSS através de tag html */
+* {
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Verdana;
+	margin: 0;
+}
+
+nav {
+	text-align: center;
+	background-color: #333;
+	width: 100%;
+	/* float: left; */
+}
+
+nav a{
+	transition: 400ms;
+	text-decoration: none;
+	color: white;
+}
+
+nav a:hover{
+	color: orange;
+	font-size: 20px;
+}
+
+nav ul{
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+nav li{
+	list-style-type: none;
+	display: inline;
+	padding: 10%;	
+}
+
+header{
+	padding: 20px;
+	text-align: left;
+	background-color: #9370DB;
+	color: white;
+}
+/* Aplicar estilo CSS através de class */
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+	color: white;
+	
+	
+}
+
+.esquerda{
+	flex: 20%;
+	background-color: #f1f1f1;
+	padding: 20px;
+}
+
+.conteudo{
+	flex: 20%;
+	background-color: white;
+	padding: 20px;	 
+	color: white
+}
+.conteudoMussum{
+	flex: 60%;
+	padding: 20px;
+	background-color: white;
+	color: black;
+
+}
+
+.footer{
+	padding: 5px;
+	background-color: #1E90FF;
+	text-align: center;
+	color: white;
+	
+}
+
+/* Aplicar estilo CSS através de id */
+#imgFake{
+	background-color: #00BFFF;
+	width: 100%;
+	padding: 20px;	
+}
+#imgFake1{
+	background-color: #00BFFF;
+	padding: 60px;
+	font-size: 70%; 
+text-align: center;	
+}
+
+@media screen and (max-width: 700px){
+	.container, nav{
+		flex-direction: column;
+	}
+	
+}
